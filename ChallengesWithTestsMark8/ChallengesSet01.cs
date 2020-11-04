@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
 
 namespace ChallengesWithTestsMark8
 {
@@ -18,32 +20,57 @@ namespace ChallengesWithTestsMark8
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
+            return minuend - subtrahend;
         }
 
         public int Add(int number1, int number2)
         {
-            throw new NotImplementedException();
+            return number1 + number2;
         }
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            throw new NotImplementedException();
+            return (number1 < number2) ? number1 : number2;
+            //or you can just do if else:
+
+            //if(number1 < number2)
+            //{
+            //    return number1;
+            //}
+            //else
+            //{
+            //    return number2;
+            //}
         }
 
         public long Multiply(long factor1, long factor2)
         {
-            throw new NotImplementedException();
+            return factor1 * factor2;
         }
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+            if (nameOfPerson != "")  //this will apply to all the names they have listed in the unit tests
+                                     //think of nameOfPerson as something they are able to change
+                                     //you don't need to create those specific name values
+            {
+                return $"Hello, {nameOfPerson}!";
+            }
+            else
+            {
+                return $"Hello!"; //this will apply to the empty string ""
+            }
+
+            //you could do ternary as well:
+            //return (nameOfPerson != "") ? $"Hello, {nameOfPerson}!" : $"Hello!";
         }
 
         public string GetHey()
         {
-            throw new NotImplementedException();
+            return "HEY!";  //I was confused here because I didn't know what they expected to see
+                            //I went to Solution Explorer and double clicked ChallengesSet01Tests.cs
+                            //which pulled up all the unit test source code
+                            //This told me they expected to see "HEY!"
         }
     }
 }
