@@ -8,9 +8,13 @@ namespace ChallengesWithTestsMark8
     {
         public bool ArrayContainsAFalse(bool[] vals)
         {
-            for (int i = 0; i < vals.Length; i++)
+            //foreach I think is better than the for but I did both below:
+
+            foreach(var item in vals)
+            //for (int i = 0; i < vals.Length; i++)
             {
-                if (vals[i] == false) //I didn't have an == to false which was causing it to fail
+                if(item == false)
+                //if (vals[i] == false)
                 {
                     return true;
                 }
