@@ -65,7 +65,7 @@ namespace ChallengesWithTestsMark8
             return intList.Min();
         }
 
-        public void ChangeBusinessNameTo_TrueCoders(Business biz) //should void be Business? I think I may have saved on accident
+        public void ChangeBusinessNameTo_TrueCoders(Business biz)
         {
             biz.Name = "TrueCoders";
             //all I had to do was initialize the property in the business class for the Name. You would do the class value

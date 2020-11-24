@@ -40,7 +40,7 @@ namespace ChallengesWithTestsMark8
 
         public bool PasswordContainsUpperLowerAndNumber(string password)
         {
-            //created a bool variable to for upper case, lower case, and digit
+            //created a bool variable for upper case, lower case, and digit
             bool containsUpper = password.Any(char.IsUpper);
             bool containsLower = password.Any(char.IsLower);
             bool containsNumber = password.Any(char.IsDigit);
