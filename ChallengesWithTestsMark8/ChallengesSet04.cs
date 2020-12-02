@@ -133,7 +133,7 @@ namespace ChallengesWithTestsMark8
             //determine average number by sum of evens / by length
             //newArray.Sum() / newArray.Length;
             //recognize even by num % 2 == 0 
-            
+
             //test requires null check
             if (numbers == null)
             {
@@ -151,7 +151,7 @@ namespace ChallengesWithTestsMark8
             for (int i = 0; i < numbers.Length; i++)
             {
                 //locate even numbers in array
-                if(numbers[i] % 2 == 0)
+                if (numbers[i] % 2 == 0)
                 {
                     //total elements in array incremented
                     counter++;
@@ -160,7 +160,7 @@ namespace ChallengesWithTestsMark8
                 }
             }
             //need to check for sum being 0, this includes empty array and only odd nums in array
-            if(sum == 0)
+            if (sum == 0)
             {
                 return 0;
             }
